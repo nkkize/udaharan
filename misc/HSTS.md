@@ -1,9 +1,9 @@
 ## HSTS
 HSTS stands for HTTP strict transport porotcol.
 1. its a web security policy mechanism
-2. it helps to protext websites against the protocol downgrade attacks and cookies hijacking.
-3. It allows web serviers to declare that web browsers shouls interact with it using only secure HTTPS connecton only.
-4. This policy is communicated by the server to the user agent via an HTTPS response header field - 'Strict-Transport-Security'.
+2. it helps to protect websites against the protocol downgrade attacks and cookies hijacking.
+3. It allows web servers to declare that web browsers should interact with it using only secure HTTPS connection only.
+4. This policy is communicated by the server to the user agent via an HTTPS response header field - `Strict-Transport-Security`.
 
 ### 'Strict-Transport-Security' HTTPS resposne Header:
 1. this header specifies a period of time during which the user agent should only accesss the server in a secure fashion. It specifies the max-age in seconds.
@@ -12,3 +12,5 @@ HSTS stands for HTTP strict transport porotcol.
    1. it doesn't connect over HTTP or redirect users to HTTPS.
    2. it never accept the clear text HTTP.
    3. A user-agent not capable of doing TLS will not be able to connnect to the site anymore.
+   4. The user-agent modifies the HTTP link into HTTPS links.
+   5. If the server's TLS certificate can not be trusted. The user-agent terminates the connection.
