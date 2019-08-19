@@ -19,3 +19,10 @@ HSTS stands for HTTP strict transport porotcol.
 
 ### Best Practices:
 1. HSTS hosts should declare HSTS policy at their top-level domain name. The header should specify the includeSubDomains directive.
+
+### How to enable HTTP Strict Transport Security (HSTS) for your site
+#### In Linux:
+   1. Go to your project root folder.
+   2. create/update the following file `.htacess`.
+   3. Add following content in the file and save it.
+   ```sh Header set Strict-Transport-Security "max-age=31536000" env=HTTPS```
