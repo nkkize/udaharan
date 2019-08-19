@@ -25,4 +25,4 @@ HSTS stands for HTTP strict transport porotcol.
    1. Go to your project root folder.
    2. create/update the following file `.htacess`.
    3. Add following content in the file and save it.
-   ```sh Header set Strict-Transport-Security "max-age=31536000" env=HTTPS```
+   ``` Header set Strict-Transport-Security "max-age=31536000" env=HTTPS```
